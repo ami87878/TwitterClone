@@ -20,11 +20,25 @@
 
 
       <q-list >
-        <q-item clickable v-ripple>
-          <q-item-section avatar>
-            <q-icon color="dark" name="home" size="2rem" />
+        <q-item clickable v-ripple to="/">
+          <q-item-section avatar >
+            <q-icon color="secondary" name="home" size="2rem" />
           </q-item-section>
-          <q-item-section>Home</q-item-section>
+          <q-item-section color="dark" class="text-h5">Home</q-item-section>
+        </q-item>
+
+        <q-item clickable v-ripple to="/">
+          <q-item-section avatar >
+            <q-icon color="secondary" name="home" size="2rem" />
+          </q-item-section>
+          <q-item-section color="dark" class="text-h5">Home</q-item-section>
+        </q-item>
+        
+        <q-item clickable v-ripple to="/">
+          <q-item-section avatar >
+            <q-icon color="secondary" name="home" size="2rem" />
+          </q-item-section>
+          <q-item-section color="dark" class="text-h5">Home</q-item-section>
         </q-item>
 
         
