@@ -9,7 +9,7 @@
 
           <span class="gt-xs">Twitter</span>
           
-            <q-icon class="q-py-md q-px-lg  lt-sm absolute-center" 
+            <q-icon class=" icon-position  q-py-md q-px-lg  lt-sm absolute-center" 
              color="blue-8"
              name="fa-brands fa-twitter" 
              size="3rem" />
@@ -123,3 +123,7 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+
+
+</style>
