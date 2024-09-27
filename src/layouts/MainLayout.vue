@@ -14,34 +14,27 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
+    <q-drawer elevated width="350" show-if-above v-model="leftDrawerOpen" side="left" bordered>
       <!-- drawer content -->
       <q-icon class="q-py-md q-px-lg" color="blue-8" name="fa-brands fa-twitter" size="3rem" />
 
 
-      <q-list >
+      <q-list>
         <q-item clickable v-ripple to="/">
-          <q-item-section avatar >
+          <q-item-section avatar>
             <q-icon color="secondary" name="home" size="2rem" />
           </q-item-section>
           <q-item-section color="dark" class="text-h5">Home</q-item-section>
         </q-item>
 
-        <q-item clickable v-ripple to="/">
-          <q-item-section avatar >
-            <q-icon color="secondary" name="home" size="2rem" />
+        <q-item clickable v-ripple to="/about">
+          <q-item-section avatar>
+            <q-icon color="secondary" name="info" size="2rem" />
           </q-item-section>
-          <q-item-section color="dark" class="text-h5">Home</q-item-section>
-        </q-item>
-        
-        <q-item clickable v-ripple to="/">
-          <q-item-section avatar >
-            <q-icon color="secondary" name="home" size="2rem" />
-          </q-item-section>
-          <q-item-section color="dark" class="text-h5">Home</q-item-section>
+          <q-item-section color="dark" class="text-h5">About</q-item-section>
         </q-item>
 
-        
+
 
       </q-list>
 
@@ -50,6 +43,18 @@
 
     <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
       <!-- drawer content -->
+      <q-input  
+       dense
+       placeholder="Search Twitter"
+      :rounded="true" 
+       :outlined="true"
+       color="positive"
+      class="q-ma-md">
+        <template v-slot:prepend>
+          <q-icon name="search" />
+        </template>
+      </q-input>
+
     </q-drawer>
 
     <q-page-container>
