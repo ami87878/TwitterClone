@@ -1,13 +1,29 @@
 <template>
-    <div>
+    <q-page class="q-ma-lg">
 
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, ea?
-    </div>
+        <h4>about Tweitter</h4>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, excepturi.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, excepturi.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, excepturi.
+            Lorem ipsum dolor sit amet, consectetur adipisicing 
+            elit. Vero adipisci sit fuga voluptas quaerat necessitatibus
+             officia cum quidem consequatur possimus?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, excepturi.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, excepturi.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, excepturi.
+            Lorem ipsum dolor sit amet, consectetur adipisicing 
+            elit. Vero adipisci sit fuga voluptas quaerat necessitatibus
+             officia cum quidem consequatur possimus?
+        </p>
+    </q-page>
 </template>
 
 <script>
     export default {
-        
+        name:'AboutPage'
     }
 </script>
 

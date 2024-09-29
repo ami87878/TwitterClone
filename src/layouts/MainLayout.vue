@@ -7,7 +7,7 @@
 
         <q-toolbar-title class="text-weight-bold">
 
-          <span class="gt-xs">Twitter</span>
+          <span class="gt-xs">{{$route.name}}</span>
           
             <q-icon class=" icon-position  q-py-md q-px-lg  lt-sm absolute-center" 
              color="blue-8"
@@ -26,7 +26,7 @@
 
 
       <q-list>
-        <q-item clickable v-ripple to="/">
+        <q-item :exact="true" clickable v-ripple to="/">
           <q-item-section avatar>
             <q-icon color="secondary" name="home" size="2rem" />
           </q-item-section>
@@ -40,6 +40,13 @@
           <q-item-section color="dark" class="text-h5">About</q-item-section>
         </q-item>
 
+        <q-item clickable v-ripple to="/notification">
+          <q-item-section avatar>
+            <q-icon color="secondary" name="notifications" size="2rem" />
+          </q-item-section>
+          <q-item-section color="dark" class="text-h5">Notification</q-item-section>
+        </q-item>
+
 
 
       </q-list>
@@ -48,7 +55,7 @@
 
 
     <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
-      <!-- drawer content -->
+
       <q-input dense placeholder="Search Twitter" :rounded="true" :outlined="true" color="positive" class="q-ma-md">
         <template v-slot:prepend>
           <q-icon name="search" />
@@ -103,25 +110,17 @@
   </q-layout>
 </template>
 
-<script>
+<script setup>
 import { ref } from 'vue'
 
-export default {
-  setup() {
-    const leftDrawerOpen = ref(false)
-    const rightDrawerOpen = ref(false)
+const leftDrawerOpen = ref(false)
+const rightDrawerOpen = ref(false)
 
-    return {
-      leftDrawerOpen,
-      toggleLeftDrawer() {
-        leftDrawerOpen.value = !leftDrawerOpen.value
-      },
 
-      rightDrawerOpen,
-
-    }
-  }
+const toggleLeftDrawer = function () {
+  leftDrawerOpen.value = !leftDrawerOpen.value
 }
+
 </script>
 <style lang="scss" scoped>
 
