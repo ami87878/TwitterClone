@@ -73,7 +73,7 @@
           <q-item-section>
             <q-item-label overline class="text-h3 text-teal-9 text-bold">Sport</q-item-label>
             <q-item-label>Match will be begin</q-item-label>
-            <q-item-label caption>barcelona and rea madrid will play soon</q-item-label>
+            <q-item-label caption>Barcelona and Real Madrid will play soon</q-item-label>
           </q-item-section>
 
           <q-item-section side top>
