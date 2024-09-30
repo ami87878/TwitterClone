@@ -1,7 +1,7 @@
 <template>
     <q-page class="q-ma-lg">
 
-        <h4>about Tweitter</h4>
+        <h4 class="text-weight-bold">about Tweitter</h4>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, excepturi.
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, excepturi.
