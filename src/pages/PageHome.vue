@@ -1,5 +1,6 @@
 <template>
-  <q-page>
+  <q-page class="relative-position">
+    <q-scroll-area class="absolute fullscreen">
     <div class="q-pa-lg">
       <q-input :autogrow="true" bottom-slots v-model="text" label="message" counter maxlength="300" :dense="dense">
         <template #before>
@@ -39,6 +40,7 @@
             <q-item-label>
               <strong class="text-weight-bold q-ma-sm">Amirhossein Khanmohammadi</strong>
               <span class="text-grey-7">@amirhossein &bull; {{ targetDate(message.date) }}</span>
+              <br class="lt-md">
             </q-item-label>
             <q-item-label class="q-pa-md twitter--space">
               {{ message.content }}
@@ -62,6 +64,7 @@
       <q-separator />
 
     </q-list>
+    </q-scroll-area>
   </q-page>
 </template>
 
