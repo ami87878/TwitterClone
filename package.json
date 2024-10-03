@@ -3,12 +3,15 @@
   "version": "0.0.1",
   "description": "amirhossein project",
   "productName": "Quasar App",
+  "homepage": "https://ami87878.github.io/TwitterClone/",
   "author": "amirhossein <ak47.amirhosseinkhanmohamadi@gmail.com>",
   "private": true,
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
-    "build": "quasar build"
+   "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist/spa",
+  "build": "quasar build"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
@@ -23,6 +26,7 @@
     "@quasar/app-vite": "^1.9.0",
     "autoprefixer": "^10.4.2",
     "electron": "^32.1.2",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.14"
   },
   "engines": {
