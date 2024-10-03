@@ -10,14 +10,7 @@
             elit. Vero adipisci sit fuga voluptas quaerat necessitatibus
              officia cum quidem consequatur possimus?
         </p>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, excepturi.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, excepturi.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, excepturi.
-            Lorem ipsum dolor sit amet, consectetur adipisicing 
-            elit. Vero adipisci sit fuga voluptas quaerat necessitatibus
-             officia cum quidem consequatur possimus?
-        </p>
+        
     </q-page>
 </template>
 

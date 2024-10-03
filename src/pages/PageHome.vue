@@ -1,6 +1,6 @@
 <template>
   <q-page class="relative-position">
-    <q-scroll-area class="absolute fullscreen">
+    <q-scroll-area class="absolute full-width full-height">
       <div class="q-pa-lg">
         <q-input :autogrow="true" bottom-slots v-model="text" label="message" counter maxlength="300" :dense="dense">
           <template #before>
